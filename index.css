@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+@layer base {
+  :root {
+    --primary-50: 205 100%, 97%;
+    --primary-100: 205 100%, 93%;
+    --primary-200: 205 100%, 87%;
+    --primary-300: 203 100%, 78%;
+    --primary-400: 206 100%, 67%;
+    --primary-500: 210 100%, 64%;
+    --primary-600: 214 92%, 53%;
+    --primary-700: 217 84%, 48%;
+    --primary-800: 218 78%, 40%;
+    --primary-900: 217 70%, 33%;
+    --primary-950: 219 63%, 21%;
+
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222 47% 11%;
+
+    --success: 141.1 70.6% 45.3%;
+    --warning: 45.4 93.4% 47.5%;
+
+    --shadow-100: 0px 2px 4px 0px rgba(50, 50, 71, 0.06),
+      0px 2px 2px 0px rgba(50, 50, 71, 0.06);
+
+    --shadow-200: 0px 4px 8px 0px rgba(50, 50, 71, 0.06),
+      0px 4px 4px 0px rgba(50, 50, 71, 0.08);
+
+    --shadow-300: 0px 8px 16px 0px rgba(50, 50, 71, 0.06),
+      0px 8px 8px 0px rgba(50, 50, 71, 0.08);
+
+    --shadow-400: 0px 16px 24px 0px rgba(50, 50, 71, 0.08),
+      0px 12px 12px 0px rgba(50, 50, 71, 0.08);
+
+    --shadow-500: 0px 24px 32px 0px rgba(50, 50, 71, 0.16),
+      0px 16px 16px 0px rgba(50, 50, 71, 0.12);
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
